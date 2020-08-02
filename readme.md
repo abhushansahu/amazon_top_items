@@ -1,8 +1,8 @@
 # Amazon Top Items
 This is the breakdown of the top 100 electronics and top 100 smartphones sold through [Amazon.in](https://www.amazon.in/)
 
-List can be seen from [here](https://www.amazon.in/gp/bestsellers/electronics/ref=zg_bs_pg_2₹ie=UTF8&pg=2). 
-
+List can be seen for [electronics here](https://www.amazon.in/gp/bestsellers/electronics/ref=zg_bs_pg_2₹ie=UTF8&pg=2) 
+and [smartphones here](https://www.amazon.in/gp/bestsellers/electronics/1805560031/ref=zg_bs_pg_2?ie=UTF8&pg=2).
 ## Why make this list
 This is a gestimate of where exactly are the Indians spending on the e-commerce market, and it's effect towards the global market.
 

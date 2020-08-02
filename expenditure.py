@@ -48,7 +48,7 @@ class Expenditure:
 
 
 if __name__ == "__main__":
-    categories = ['smartphones', 'electronics']  # smartphones, electronics
+    categories = ['smartphones']  # smartphones, electronics
     for c in categories:
         for i in return_items_in_bestseller(c):  # smartphones, electronics
             if i.is_file():

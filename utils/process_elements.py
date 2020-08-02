@@ -17,7 +17,8 @@ class ProcessElements:
         self.process()
 
     def __repr__(self):
-        return f'{self.rank} - {self.brand} - {self.price} - {self.reviewed_by} - {self.coo} - {self.overall_rating} - {self.name}'
+        return f'{self.rank} - {self.brand} - {self.price} - {self.reviewed_by} - {self.coo} - {self.overall_rating}' \
+               f' - {self.name}'
 
     def process(self):
         if type(self.rank) == str:

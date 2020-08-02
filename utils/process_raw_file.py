@@ -12,13 +12,6 @@ class ProcessRawfile:
         self.filename = kwargs.get('filename')
         self.__index = 0
         self.__total_elements = 1
-        # self.elements = {
-        #     'rank': '//*[@id="zg-ordered-list"]/li[{index}]/span/div/div/span[1]/span',
-        #     # 'image': '//*[@id="zg-ordered-list"]/li[{index}}]/span/div/span/a/span/div/img',
-        #     'overall_rating': '//*[@id="zg-ordered-list"]/li[{index}]/span/div/span/div[1]/a[1]/i/span',
-        #     'name': '//*[@id="zg-ordered-list"]/li[{index}]/span/div/span/a/div',
-        #     'price': '//*[@id="zg-ordered-list"]/li[{index}]/span/div/span/div[2]/a/span/span',
-        # }
 
     def __repr__(self):
         return f'Processing file {self.filename}'
@@ -66,9 +59,7 @@ class ProcessRawfile:
                 val = tree.xpath(v.format(index=i))
                 if len(val):
                     elem[k] = tree.xpath(v.format(index=i))[0].text
-                    # print(k, tree.xpath(v.format(index=i))[0].text)
             yield elem
-        # print('done')
 
 
 if __name__ == "__main__":

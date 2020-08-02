@@ -4,7 +4,6 @@ from pathlib import Path
 def return_items_in_bestseller(key):
     if key.lower() in ('electronics', 'smartphones'):
         path = Path(__file__).parent.parent.joinpath('data/raw/amazon/best_seller').joinpath(key)
-        # yield [i for i in path.iterdir() if i.is_file()]
         return path.iterdir()
     else:
         raise FileNotFoundError
@@ -37,8 +36,8 @@ country_of_origin = {
     'oneplus': 'China',
     'oppo': 'China',
     'nokia': 'Finland',
-    'jbl': 'United States',
-    'infinity': 'South Korea',  # samsung acquired
+    'jbl': 'United States',  # samsung acquired?
+    'infinity': 'South Korea',  # because harman was acquired by Samsung
     'vivo': 'China',
     'apple': 'China',
     'panasonic': 'Japan',
@@ -51,6 +50,3 @@ country_of_origin = {
     'echo': 'United States',  # Amazon
     'noise': 'India'
 }
-
-for i in return_items_in_bestseller('electronics'):
-    print(i)
