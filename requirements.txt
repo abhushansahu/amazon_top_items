@@ -1,5 +1,5 @@
 lxml
-certifi==2020.6.20
+certifi==2022.12.7
 cssselect==1.1.0
 lxml@ file:///C:/ci/lxml_1594826938446/work
 soupsieve==2.0.1
